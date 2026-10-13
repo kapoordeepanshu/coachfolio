@@ -8,7 +8,7 @@ These are the things that get the repo found on Google and GitHub search and tur
   > Open-source fitness coaching platform & personal trainer app. Workout builder, client PWA, progress tracking, Stripe payments. Self-hosted alternative to Trainerize & TrueCoach. Next.js + Supabase.
 - **Website:** link to the live demo
 - **Topics** (up to 20): `fitness-app` `personal-trainer` `fitness-coaching` `workout-tracker` `workout-planner` `gym-management` `online-coaching` `trainerize-alternative` `white-label` `saas` `pwa` `nextjs` `supabase` `typescript` `stripe` `self-hosted` `open-source` `fitness` `workout` `coaching-platform`
-- **Social preview image** (Settings → General): 1280×640 with the logo, tagline and a screenshot
+- **Social preview image** (Settings → General → Social preview → Edit → Upload): use `docs/social-preview.png` (1280×640). Source: `docs/social-preview.html`
 - Pin the repo on your GitHub profile; add a profile README that links to it and says "Available for hire"
 
 ## README

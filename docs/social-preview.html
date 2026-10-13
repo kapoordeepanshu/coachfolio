@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coachfolio social preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+    background: #0b0f14;
+    color: #f2f5f8;
+    position: relative;
+  }
+  .glow {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(600px 400px at 85% 20%, rgba(255, 92, 53, .28), transparent 70%),
+      radial-gradient(500px 380px at 70% 100%, rgba(255, 176, 32, .14), transparent 70%);
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .left { position: absolute; left: 80px; top: 78px; width: 690px; }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .mark {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: linear-gradient(135deg, #ff5c35, #ffb020);
+    display: grid; place-items: center;
+    box-shadow: 0 10px 30px rgba(255, 92, 53, .35);
+  }
+  .name { font-size: 56px; font-weight: 800; letter-spacing: -1.5px; }
+  .badge {
+    margin-left: 6px; font-size: 15px; font-weight: 700; letter-spacing: 1px;
+    color: #ffb020; border: 1.5px solid rgba(255,176,32,.55); border-radius: 999px; padding: 5px 13px;
+  }
+  h1 {
+    margin-top: 44px; font-size: 50px; line-height: 1.12; font-weight: 800; letter-spacing: -1.2px;
+  }
+  h1 span {
+    background: linear-gradient(90deg, #ff5c35, #ffb020);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { margin-top: 22px; font-size: 23px; line-height: 1.45; color: #a9b4c0; }
+  .chips { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    font-size: 17px; font-weight: 600; color: #dfe6ec;
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+    padding: 8px 15px; border-radius: 10px;
+  }
+  .foot {
+    position: absolute; left: 80px; bottom: 44px;
+    font-size: 18px; color: #7d8a97; letter-spacing: .3px;
+  }
+  .foot b { color: #c9d2da; font-weight: 600; }
+
+  /* phone */
+  .phone {
+    position: absolute; right: 120px; top: 64px;
+    width: 280px; height: 540px; border-radius: 42px;
+    background: #151b23; border: 2px solid #2a333e;
+    box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 0 8px #0f141a;
+    padding: 22px 20px; overflow: hidden;
+    transform: rotate(4deg);
+  }
+  .notch { width: 96px; height: 22px; border-radius: 12px; background: #0b0f14; margin: -6px auto 18px; }
+  .tag { font-size: 12px; font-weight: 700; color: #ffb020; letter-spacing: 1.2px; }
+  .ttl { font-size: 21px; font-weight: 800; margin-top: 4px; }
+  .meta { font-size: 13px; color: #8996a3; margin-top: 3px; }
+  .ring { margin: 22px auto 0; width: 176px; height: 176px; position: relative; }
+  .ring svg { transform: rotate(-90deg); }
+  .time { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+  .time b { font-size: 44px; font-weight: 800; letter-spacing: -1px; display: block; }
+  .time small { font-size: 13px; color: #8996a3; font-weight: 600; letter-spacing: 1px; }
+  .blocks { display: flex; gap: 6px; margin-top: 22px; }
+  .blk { flex: 1; height: 6px; border-radius: 3px; background: #2a333e; }
+  .blk.on { background: linear-gradient(90deg, #ff5c35, #ffb020); }
+  .btns { display: flex; gap: 10px; margin-top: 20px; }
+  .btn { flex: 1; height: 46px; border-radius: 14px; display: grid; place-items: center; font-weight: 700; font-size: 15px; }
+  .btn.ghost { background: #222a34; color: #c9d2da; }
+  .btn.main { background: linear-gradient(135deg, #ff5c35, #ff8a2b); color: #fff; }
+  .stat { margin-top: 18px; display: flex; justify-content: space-between; font-size: 13px; color: #8996a3; }
+  .stat b { color: #f2f5f8; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="grid"></div>
+
+  <div class="left">
+    <div class="brand">
+      <div class="mark">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6.5 6.5v11M17.5 6.5v11M3 9.5v5M21 9.5v5M6.5 12h11"/>
+        </svg>
+      </div>
+      <div class="name">Coachfolio</div>
+      <div class="badge">OPEN SOURCE</div>
+    </div>
+
+    <h1>The open-source<br><span>fitness coaching platform</span></h1>
+    <p class="sub">Build programs, deliver them in your own branded app, track client progress and get paid. Your brand, your Stripe, your data.</p>
+
+    <div class="chips">
+      <div class="chip">Workout builder</div>
+      <div class="chip">Client PWA</div>
+      <div class="chip">Progress tracking</div>
+      <div class="chip">Stripe payments</div>
+      <div class="chip">White-label</div>
+    </div>
+  </div>
+
+  <div class="foot">Self-hosted alternative to <b>Trainerize · TrueCoach · Everfit</b> &nbsp;—&nbsp; Next.js + Supabase · MIT</div>
+
+  <div class="phone">
+    <div class="notch"></div>
+    <div class="tag">BLOCK 2 OF 4 · ROUND 3</div>
+    <div class="ttl">Full Body Strength</div>
+    <div class="meta">Week 2 · Session 3 · 35 min</div>
+    <div class="ring">
+      <svg width="176" height="176" viewBox="0 0 176 176">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff5c35"/><stop offset="1" stop-color="#ffb020"/>
+          </linearGradient>
+        </defs>
+        <circle cx="88" cy="88" r="76" stroke="#2a333e" stroke-width="12" fill="none"/>
+        <circle cx="88" cy="88" r="76" stroke="url(#g)" stroke-width="12" fill="none"
+                stroke-linecap="round" stroke-dasharray="477.5" stroke-dashoffset="150"/>
+      </svg>
+      <div class="time"><div><b>0:28</b><small>WORK</small></div></div>
+    </div>
+    <div class="blocks"><div class="blk on"></div><div class="blk on"></div><div class="blk"></div><div class="blk"></div></div>
+    <div class="btns"><div class="btn ghost">Pause</div><div class="btn main">Next →</div></div>
+    <div class="stat"><span>This week <b>3 / 4</b></span><span>Streak <b>12 days</b></span></div>
+  </div>
+</body>
+</html>

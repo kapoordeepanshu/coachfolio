@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/social-preview.png" alt="Coachfolio – open-source fitness coaching platform and personal trainer app with workout player, client PWA and Stripe payments" width="100%">
+
 # Coachfolio — Open-Source Fitness Coaching Platform
 
 **Free, self-hostable software for personal trainers and online fitness coaches.**
@@ -119,23 +121,61 @@ I build and maintain Coachfolio, and I take on **custom fitness app projects** b
 
 ## FAQ
 
-**Is Coachfolio free?**
+<details>
+<summary><b>Is Coachfolio free?</b></summary>
+
 Yes. The core is open source under the MIT license. Self-host it for free with unlimited coaches and clients.
 
-**Is it an alternative to Trainerize or TrueCoach?**
+</details>
+
+<details>
+<summary><b>Is it an alternative to Trainerize, TrueCoach or Everfit?</b></summary>
+
 It covers the same core workflow: programs, a client workout app, progress tracking and payments. It's open source, self-hostable and white-label. It's newer and still growing; see the [roadmap](ROADMAP.md).
 
-**Does it work on iPhone and Android?**
+</details>
+
+<details>
+<summary><b>Does it work on iPhone and Android?</b></summary>
+
 Yes, as an installable Progressive Web App. Native App Store / Google Play builds are planned.
 
-**Can I use it for my gym, studio or kickboxing/yoga/CrossFit classes?**
+</details>
+
+<details>
+<summary><b>Can I use it for my gym, studio or kickboxing/yoga/CrossFit classes?</b></summary>
+
 Yes. Programs and workouts are fully configurable. Multi-coach teams are on the roadmap.
 
-**Can you add a feature I need?**
-Yes. Open an issue, or [hire me](#hire-me-custom-fitness-app-development) to build it.
+</details>
 
-**Is client data private?**
+<details>
+<summary><b>Can I rebrand it and sell it as my own fitness app?</b></summary>
+
+Yes. The MIT license allows commercial use and rebranding. Keep the license notice in the source code.
+
+</details>
+
+<details>
+<summary><b>How much does hosting cost?</b></summary>
+
+A small coaching business can start on the free tiers of Vercel and Supabase. Commercial use typically moves to paid plans (roughly $20–$50/month), plus video storage and delivery.
+
+</details>
+
+<details>
+<summary><b>Is client data private?</b></summary>
+
 Each coach's data is isolated with Postgres Row-Level Security, and clients can only see their own records. When you self-host, the data stays on your infrastructure.
+
+</details>
+
+<details>
+<summary><b>Can you add a feature I need or build a custom app for my business?</b></summary>
+
+Yes. Open an issue, or [hire me](#hire-me-custom-fitness-app-development) to build it. Custom work is delivered in your own private repository.
+
+</details>
 
 ## Contributing
 
