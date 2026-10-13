@@ -1,0 +1,28 @@
+# Client/private documents — never publish
+Fitness-App-MVP-Blueprint.md
+private/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.log
+.vercel
+.turbo
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
